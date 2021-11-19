@@ -378,9 +378,9 @@ async def yt_dlp_call_back(bot, update):
             media_album_p = []
             if images is not None:
                 i = 0
-                caption = "© @torrentler"
+                caption = "© @trbotlar"
                 if is_w_f:
-                    caption = "© @torrentler"
+                    caption = "© @trbotlar"
                 for image in images:
                     if os.path.exists(str(image)):
                         if i == 0:
