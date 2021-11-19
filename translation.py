@@ -11,8 +11,8 @@ URL | dosyaismi.mp4"""
     UPLOAD_START = "Yükleniyor.."
     START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Destek', url='https://t.me/botsohbet'),
-        InlineKeyboardButton('Kanal', url='https://t.me/torrentler')
+        InlineKeyboardButton('Destek', url='https://t.me/trbotlar'),
+        InlineKeyboardButton('Kanal', url='https://t.me/trbotlar')
         ],[
         InlineKeyboardButton('Yardım Menüsü', callback_data='help')
         ]]
@@ -28,7 +28,7 @@ URL | dosyaismi.mp4"""
 1. URL gönderin.
 2. Kapak fotoğrafı için fotoğraf gönderin. (İsteğe bağlı)
 3. Buton seçin.
-Bot cevap vermediyse @thebans ile iletişime geçin"""
+Bot cevap vermediyse @hplatformsadmin ile iletişime geçin"""
     REPLY_TO_MEDIA_ALBUM_TO_GEN_THUMB = "Kapak fotoğrafı oluşturmak için bir fotoğrafa /genthumb komutunu yanıtlayın"
     ERR_ONLY_TWO_MEDIA_IN_ALBUM = """Albüm sadece iki fotoğraf içermelidir. Lütfen albümü yeniden gönderin ve tekrar deneyin veya bir albümde yalnızca iki adet fotoğraf gönderin."""
     CANCEL_STR = "İşlem İptal Edildi"
