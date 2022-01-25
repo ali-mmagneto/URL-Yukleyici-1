@@ -11,8 +11,8 @@ URL | dosyaismi.mp4"""
     UPLOAD_START = "Yükleniyor.."
     START_BUTTONS = InlineKeyboardMarkup(
         [[
-        InlineKeyboardButton('Destek', url='https://t.me/trbotlar'),
-        InlineKeyboardButton('Kanal', url='https://t.me/trbotlar')
+        InlineKeyboardButton('Destek', url='https://t.me/trbotlistesidestek'),
+        InlineKeyboardButton('Kanal', url='https://t.me/trbotlistesi')
         ],[
         InlineKeyboardButton('Yardım Menüsü', callback_data='help')
         ]]
