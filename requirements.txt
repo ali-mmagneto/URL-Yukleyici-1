@@ -4,7 +4,7 @@ hachoir
 numpy
 ffmpeg-python
 Pillow
-git+https://github.com/pyrogram/pyrogram@master
+pyrogram==1.4.16
 requests
 tgcrypto
 git+https://github.com/yt-dlp/yt-dlp
