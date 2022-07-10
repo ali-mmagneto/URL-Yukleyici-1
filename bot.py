@@ -12,7 +12,7 @@ import os
 
 # the secret configuration specific things
 if bool(os.environ.get("WEBHOOK", False)):
-    from sample_config import Config
+    from sample_config import STRING_SESSION, APP_ID, API_HASH, DOWNLOAD_LOCATION
 
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
@@ -20,15 +20,15 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 if __name__ == "__main__" :
     # create download directory, if not exist
-    if not os.path.isdir(Config.DOWNLOAD_LOCATION):
-        os.makedirs(Config.DOWNLOAD_LOCATION)
+    if not os.path.isdir(DOWNLOAD_LOCATION):
+        os.makedirs(DOWNLOAD_LOCATION)
     plugins = dict(
         root="plugins"
     )
     app = pyrogram.Client(
-        session_name=Config.STRING_SESSION,
-        api_id=Config.APP_ID,
-        api_hash=Config.API_HASH,
+        session_name=STRING_SESSION,
+        api_id=APP_ID,
+        api_hash=API_HASH,
         plugins=plugins
     )
     app.run()
