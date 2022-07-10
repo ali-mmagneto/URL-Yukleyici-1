@@ -12,7 +12,7 @@ import os
 
 # the secret configuration specific things
 if bool(os.environ.get("WEBHOOK", False)):
-    from sample_config import STRING_SESSION, APP_ID, API_HASH, DOWNLOAD_LOCATION
+    from config import STRING_SESSION, APP_ID, API_HASH, DOWNLOAD_LOCATION
 
 import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
