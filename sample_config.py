@@ -2,7 +2,7 @@ import os
 
 class Config(object):
     # get a token from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+    STRING_SESSION = os.environ.get("STRING_SESSION", "")
     
     # The Telegram API things
     # Get these values from my.telegram.org
